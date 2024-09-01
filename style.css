@@ -1,0 +1,262 @@
+@import url('https://fonts.google.com/icons?selected=Material+Symbols+Outlined:call:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=call&icon.size=24&icon.color=%235f6368&icon.platform=web') *,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #aa0601;
+    --secondary: #650300;
+    --bg-light: #fbf2f2;
+    --bg-dark: #aa0601;
+}
+
+body {
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    color: #FFFFFF;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+/* layout */
+.header {
+    background: #AA0601;
+    padding: 16px 0;
+    width: 100%;
+}
+
+.header-wrapper {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    height: 48px;
+    width: 80px;
+}
+
+.header .logo a {
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header .nav {
+    font-size: 20px;
+}
+
+.header .nav-item a {
+    padding: 8px 32px;
+}
+
+@media(max-width:767px) {
+    .header {
+        padding: 0;
+    }
+
+    .header .logo {
+        margin: 16px 12px;
+    }
+
+    .header-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .nav {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .header .nav-item {
+        text-align: center;
+        padding: 0;
+        width: 50%;
+    }
+
+    .header .nav-item a {
+        width: 100%;
+        padding: 12px 0;
+        border: solid 1px white;
+    }
+}
+
+
+
+.section {
+    background: white;
+    height: 50px;
+}
+
+
+
+.footer {
+    background: #AA0601;
+    color: #FFFFFF;
+    padding-top: 48px;
+    padding-bottom: 32px;
+}
+
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px white;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+}
+
+.footer .nav {
+    margin-bottom: 26px;
+}
+
+.footer .nav-item a {
+    padding: 12px 32px;
+}
+
+.footer .social-list img {
+    width: 48px;
+}
+
+.footer .social-list a {
+    padding: 0 16px;
+}
+
+.footer .contract-list {
+    font-size: 36px;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.footer .contract-list .material-symbols-outlined {
+    font-size: 48px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.footer .contract-list li:not(last-child) {
+    margin-bottom: 8px;
+}
+
+.footer .copyright {
+    justify-content: space-between;
+}
+
+.footer .copyright-text {
+    margin-bottom: 4px;
+}
+
+.footer .privacy-list a {
+    padding: 0 24px;
+}
+
+/* 平板large的斷點 */
+@media (max-width:992px) {
+    .footer .social-list a {
+        padding: 0 8px;
+    }
+}
+
+/* 手機small的斷點 */
+@media(max-width:576px) {
+    .footer .nav {
+        display: none;
+    }
+
+    .footer .contract-list {
+        font-size: 16px;
+    }
+
+    .footer .social-list img {
+        width: 24px;
+    }
+
+    .footer .contract-list .material-symbols-outlined {
+        font-size: 24px;
+        margin-right: 8px;
+    }
+
+    .footer .copyright {
+        flex-direction: column;
+    }
+
+    .footer .privacy-list a {
+        padding: 4px 0;
+    }
+}
+
+
+/* utilities */
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+/* 平板large的斷點 */
+@media(max-width:992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* 手機small的斷點 */
+@media(max-width:576px) {
+    .containter {
+        max-width: 372px;
+    }
+}
+
+.container-md-fluid {
+    max-width: 1320px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+.container-sm-full {
+    max-width: 1320px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+
+/* Medium的斷點 */
+@media(max-width:767px) {
+    .container-sm-full {
+        padding: 0;
+    }
+}
+
+
+
+
+.d-flex {
+    display: flex;
+}
+
+.bg-light {
+    background: var(--bg-light);
+}
+
+.bg-dark {
+    background: var(--bg-dark);
+}
+
+.pr-0 {
+    padding-right: 0 !important;
+}
+
+.pl-0 {
+    padding-left: 0 !important;
+}
